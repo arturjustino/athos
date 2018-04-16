@@ -8,7 +8,7 @@ namespace Athos.Model
 {
     public class UserDataAccessLayer
     {
-        string connectionString = "";
+        string connectionString = @"Integrated Security=SSPI;Persist Security Info=False;Data Source=localhost\sqlexpress;Database=Athos;";
 
         public IEnumerable<User> GetUsers()
         {
